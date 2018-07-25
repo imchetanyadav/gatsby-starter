@@ -4,7 +4,6 @@ import { withStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 import Button from '@material-ui/core/Button';
 import { Flex } from 'rebass'
-import Link from 'gatsby-link'
 import MenuIcon from 'mdi-react/MenuIcon'
 import NavLink from './NavLink'
 
@@ -37,24 +36,24 @@ class NavDrawer extends React.Component {
 
     const sideList = (
       <div className={classes.list}>
-        <Flex flexDirection='column' mt={3} ml={2}>
+          <Flex flexDirection='column' mt={3} ml={2}>
           <NavLink
             to='/#news'
             children='News'
           />
           <NavLink
             to='/#contest'
-            children='Contests'
+            children='Contest'
           />
           <NavLink
             to='/#about'
-            children='About'
+            children= 'About'
           />
           <NavLink
             to='/#join'
-            children='Feedback'
+            children='Join'
           />
-        </Flex>
+          </Flex>
       </div>
     );
 
@@ -82,4 +81,4 @@ NavDrawer.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(translate ("Header") (NavDrawer)) ;
+export default withStyles(styles)(NavDrawer) ;

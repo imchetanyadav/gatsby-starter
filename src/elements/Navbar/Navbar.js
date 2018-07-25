@@ -12,14 +12,14 @@ class Navbar extends Component {
           letterSpacing: '.7px',
         }}
       >
-        <Flex alignItems='center' justifyContent='space-around' mt='6'>
+        <Flex alignItems='center' justifyContent='flex-end' mt='6'>
           <NavLink
             to='/#news'
             children='News'
           />
           <NavLink
             to='/#contest'
-            children='Contests'
+            children='Contest'
           />
           <NavLink
             to='/#about'
@@ -27,7 +27,7 @@ class Navbar extends Component {
           />
           <NavLink
             to='/#join'
-            children='Feedback'
+            children='Join'
           />
         </Flex>
       </div>

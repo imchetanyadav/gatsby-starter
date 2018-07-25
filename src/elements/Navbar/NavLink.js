@@ -12,6 +12,7 @@ const NavLink = styled(Link)`
   color: ${colors.black};
   text-decoration: none;
   padding: 0.5rem;
+  margin: 0 10px;
 
   &:hover {
     color: ${colors.primary}
